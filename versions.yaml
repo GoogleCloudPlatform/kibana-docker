@@ -16,16 +16,40 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
+  - dir: '6/debian9/6.5'
+    repo: kibana6
+    tags:
+      - '6.5.4-debian9'
+      - '6.5-debian9'
+      - '6-debian9'
+      - '6.5.4'
+      - '6.5'
+      - '6'
+      - 'latest'
+    from: *from
+    packages:
+      kibana:
+        version: '6.5.4'
+        sha512: '65c4ab427ae2a2486b71520893eeb78d8628bf3e6fd47c0d576ca4b6bfa8f9058ecf957ef488fd47260c8295ea49952e1b411d6a6c199f26d74e6a84cfcf7309'
+  - dir: '6/debian9/6.4'
+    repo: kibana6
+    tags:
+      - '6.4.3-debian9'
+      - '6.4-debian9'
+      - '6.4.3'
+      - '6.4'
+    from: *from
+    packages:
+      kibana:
+        version: '6.4.3'
+        sha512: 'db55d5201675d1d71cbc511ffd4fb94332316eef8f06c2419d498b930e068030c625c18a0c2fec761cb0c066abc16ddf2c2d8a2fa59aaa3bc35ea1e289b8ae99'
   - dir: '6/debian9/6.3'
     repo: kibana6
     tags:
       - '6.3.2-debian9'
       - '6.3-debian9'
-      - '6-debian9'
       - '6.3.2'
       - '6.3'
-      - '6'
-      - 'latest'
     from: *from
     packages:
       kibana:
