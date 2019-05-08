@@ -1,4 +1,4 @@
-# Copyright 2018 Google LLC
+# Copyright 2019 Google Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,16 +16,55 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
+  - dir: '7/debian9/7.0'
+    repo: kibana7
+    tags:
+      - '7.0.1-debian9'
+      - '7.0-debian9'
+      - '7-debian9'
+      - '7.0.1'
+      - '7.0'
+      - '7'
+      - 'latest'
+    from: *from
+    packages:
+      kibana:
+        version: '7.0.1'
+        sha512: 'd085d85e988f8c008e6f2a528683d5336e7b263ff0e5615fcf55611c44702c6eaafad470c5bd3cf43b1c580e705a2595db80b43f61b4168efcd09600d3d1ce34'
+  - dir: '6/debian9/6.7'
+    repo: kibana6
+    tags:
+      - '6.7.2-debian9'
+      - '6.7-debian9'
+      - '6-debian9'
+      - '6.7.2'
+      - '6.7'
+      - '6'
+      - 'latest'
+    from: *from
+    packages:
+      kibana:
+        version: '6.7.2'
+        sha512: '71b89f326374319d526e7fa6af916463333990c3723150f5cc55450a239adc6f4202e9fb9924e09accd7e956721c2795c1652713cd784da3f78bf26ac9dc47bb'
+  - dir: '6/debian9/6.6'
+    repo: kibana6
+    tags:
+      - '6.6.2-debian9'
+      - '6.6-debian9'
+      - '6.6.2'
+      - '6.6'
+    from: *from
+    packages:
+      kibana:
+        version: '6.6.2'
+        sha512: '41011b75cf1af211de5ef72284da4999cb833a013449d088deb2ef2ec6b841b5e8a715ee4e77130b9ba958f2809d05c9184c860bbd12fce27485cc4de730388f'
   - dir: '6/debian9/6.5'
     repo: kibana6
     tags:
       - '6.5.4-debian9'
       - '6.5-debian9'
-      - '6-debian9'
       - '6.5.4'
       - '6.5'
-      - '6'
-      - 'latest'
     from: *from
     packages:
       kibana:
