@@ -31,18 +31,6 @@ versions:
       kibana:
         version: '7.1.0'
         sha512: 'd93ccf8d35377012600493917da1aea331cee4f078fb84a0c5aefbc6cc3e8178aad0cc2a1b067805432a505d9c16eddc942590c6e867805a8090cf142b0ad249'
-  - dir: '7/debian9/7.0'
-    repo: kibana7
-    tags:
-      - '7.0.1-debian9'
-      - '7.0-debian9'
-      - '7.0.1'
-      - '7.0'
-    from: *from
-    packages:
-      kibana:
-        version: '7.0.1'
-        sha512: 'd085d85e988f8c008e6f2a528683d5336e7b263ff0e5615fcf55611c44702c6eaafad470c5bd3cf43b1c580e705a2595db80b43f61b4168efcd09600d3d1ce34'
   - dir: '6/debian9/6.8'
     repo: kibana6
     tags:
@@ -58,54 +46,6 @@ versions:
       kibana:
         version: '6.8.0'
         sha512: '7d7e3d09411b1fbc68f931aee325a57d87a63269dc2c301dfe3e4924866b40e089e9262a270c085c417f1bc8149f75abccfdeb2deb21405dc4cc4916ca8f21ef'
-  - dir: '6/debian9/6.7'
-    repo: kibana6
-    tags:
-      - '6.7.2-debian9'
-      - '6.7-debian9'
-      - '6.7.2'
-      - '6.7'
-    from: *from
-    packages:
-      kibana:
-        version: '6.7.2'
-        sha512: '71b89f326374319d526e7fa6af916463333990c3723150f5cc55450a239adc6f4202e9fb9924e09accd7e956721c2795c1652713cd784da3f78bf26ac9dc47bb'
-  - dir: '6/debian9/6.6'
-    repo: kibana6
-    tags:
-      - '6.6.2-debian9'
-      - '6.6-debian9'
-      - '6.6.2'
-      - '6.6'
-    from: *from
-    packages:
-      kibana:
-        version: '6.6.2'
-        sha512: '41011b75cf1af211de5ef72284da4999cb833a013449d088deb2ef2ec6b841b5e8a715ee4e77130b9ba958f2809d05c9184c860bbd12fce27485cc4de730388f'
-  - dir: '6/debian9/6.5'
-    repo: kibana6
-    tags:
-      - '6.5.4-debian9'
-      - '6.5-debian9'
-      - '6.5.4'
-      - '6.5'
-    from: *from
-    packages:
-      kibana:
-        version: '6.5.4'
-        sha512: '65c4ab427ae2a2486b71520893eeb78d8628bf3e6fd47c0d576ca4b6bfa8f9058ecf957ef488fd47260c8295ea49952e1b411d6a6c199f26d74e6a84cfcf7309'
-  - dir: '6/debian9/6.4'
-    repo: kibana6
-    tags:
-      - '6.4.3-debian9'
-      - '6.4-debian9'
-      - '6.4.3'
-      - '6.4'
-    from: *from
-    packages:
-      kibana:
-        version: '6.4.3'
-        sha512: 'db55d5201675d1d71cbc511ffd4fb94332316eef8f06c2419d498b930e068030c625c18a0c2fec761cb0c066abc16ddf2c2d8a2fa59aaa3bc35ea1e289b8ae99'
   - dir: '6/debian9/6.3'
     repo: kibana6
     tags:
