@@ -1,4 +1,4 @@
-# Copyright 2019 Google Inc.
+# Copyright 2019 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,7 @@ _variables:
 versions:
   - dir: '7/debian9/7.1'
     repo: kibana7
+    templateSubDir: 7
     tags:
       - '7.1.0-debian9'
       - '7.1-debian9'
@@ -33,6 +34,7 @@ versions:
         sha512: 'd93ccf8d35377012600493917da1aea331cee4f078fb84a0c5aefbc6cc3e8178aad0cc2a1b067805432a505d9c16eddc942590c6e867805a8090cf142b0ad249'
   - dir: '6/debian9/6.8'
     repo: kibana6
+    templateSubDir: 6
     tags:
       - '6.8.0-debian9'
       - '6.8-debian9'
@@ -48,6 +50,7 @@ versions:
         sha512: '7d7e3d09411b1fbc68f931aee325a57d87a63269dc2c301dfe3e4924866b40e089e9262a270c085c417f1bc8149f75abccfdeb2deb21405dc4cc4916ca8f21ef'
   - dir: '6/debian9/6.3'
     repo: kibana6
+    templateSubDir: 6
     tags:
       - '6.3.2-debian9'
       - '6.3-debian9'
