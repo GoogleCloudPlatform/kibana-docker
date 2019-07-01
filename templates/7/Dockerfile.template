@@ -1,6 +1,8 @@
-FROM gcr.io/google-appengine/debian9
-ENV KIBANA_VERSION 6.4.3
-ENV KIBANA_SHA512 db55d5201675d1d71cbc511ffd4fb94332316eef8f06c2419d498b930e068030c625c18a0c2fec761cb0c066abc16ddf2c2d8a2fa59aaa3bc35ea1e289b8ae99
+FROM {{ .From }}
+
+{{- $kibana := index .Packages "kibana" }}
+ENV KIBANA_VERSION {{ $kibana.Version }}
+ENV KIBANA_SHA512 {{ $kibana.Sha512 }}
 
 ARG KIBANA_URL="https://artifacts.elastic.co/downloads/kibana/kibana-oss-$KIBANA_VERSION-linux-x86_64.tar.gz"
 
