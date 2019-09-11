@@ -2,6 +2,8 @@ FROM gcr.io/google-appengine/debian9
 ENV KIBANA_VERSION 7.3.1
 ENV KIBANA_SHA512 08966e9ce91f2970a863b75af2d2fccd2bf96432b1a23f43e8c85732872ca1b6e7a5f4507003bad3a605156c643660bf6f57984499be38d9e8009477f9235a01
 
+ENV C2D_RELEASE=${KIBANA_VERSION}
+
 ARG KIBANA_URL="https://artifacts.elastic.co/downloads/kibana/kibana-oss-$KIBANA_VERSION-linux-x86_64.tar.gz"
 
 WORKDIR /usr/share/kibana

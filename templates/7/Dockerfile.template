@@ -4,6 +4,8 @@ FROM {{ .From }}
 ENV KIBANA_VERSION {{ $kibana.Version }}
 ENV KIBANA_SHA512 {{ $kibana.Sha512 }}
 
+ENV C2D_RELEASE=${KIBANA_VERSION}
+
 ARG KIBANA_URL="https://artifacts.elastic.co/downloads/kibana/kibana-oss-$KIBANA_VERSION-linux-x86_64.tar.gz"
 
 WORKDIR /usr/share/kibana
