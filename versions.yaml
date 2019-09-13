@@ -20,34 +20,34 @@ versions:
     repo: kibana7
     templateSubDir: 7
     tags:
-      - '7.3.1-debian9'
+      - '7.3.2-debian9'
       - '7.3-debian9'
       - '7-debian9'
-      - '7.3.1'
+      - '7.3.2'
       - '7.3'
       - '7'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '7.3.1'
-        sha512: '08966e9ce91f2970a863b75af2d2fccd2bf96432b1a23f43e8c85732872ca1b6e7a5f4507003bad3a605156c643660bf6f57984499be38d9e8009477f9235a01'
+        version: '7.3.2'
+        sha512: 'a54d0ad3dafd69661762ee8d59021d955253389fb0d228f61f58b522d0644684f57ff96a4bda84d51cf39ecded4ade6c21923bc8e20d6ec9e61305fb6c0b2e32'
   - dir: '6/debian9/6.8'
     repo: kibana6
     templateSubDir: 6
     tags:
-      - '6.8.2-debian9'
+      - '6.8.3-debian9'
       - '6.8-debian9'
       - '6-debian9'
-      - '6.8.2'
+      - '6.8.3'
       - '6.8'
       - '6'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '6.8.2'
-        sha512: '4888ac20ae45112f58e472e6d85e1d3ef171b9443268ef9023e3a9b89c9f41cfab4e8e53bde7834d11a114f88372b48a8b7034bd52f0868efad26b74dd7b8ef6'
+        version: '6.8.3'
+        sha512: 'baa8ad7bb9388d6f969509ff1c8fe6273d8ec0b377aa15942a41a8f3934a670bf84fd84b96b76dbfb8fc4c053084b38dc26a6d2ce02efcb2ddf7b4530dfdeae4'
   - dir: '6/debian9/6.3'
     repo: kibana6
     templateSubDir: 6
