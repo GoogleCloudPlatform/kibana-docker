@@ -36,18 +36,18 @@ versions:
     repo: kibana6
     templateSubDir: 6
     tags:
-      - '6.8.4-debian9'
+      - '6.8.5-debian9'
       - '6.8-debian9'
       - '6-debian9'
-      - '6.8.4'
+      - '6.8.5'
       - '6.8'
       - '6'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '6.8.4'
-        sha512: '7d751eef44d669b8a989079a15e987535d6185f04ec8929c63cd2374aba9bd86a4f2301f13ee26308c769096b78f409b99b925f6125cef8f598dd7ffd587eedc'
+        version: '6.8.5'
+        sha512: '53fbac6ee1f0fb224025c9fc832b5cc299796d9b11044de2fdc1836b40005421fd46f05217a6b6570001e90483d0ba305f560e72392e402264a17940141055c8'
   - dir: '6/debian9/6.3'
     repo: kibana6
     templateSubDir: 6
