@@ -16,22 +16,22 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
-  - dir: '7/debian9/7.4'
+  - dir: '7/debian9/7.5'
     repo: kibana7
     templateSubDir: 7
     tags:
-      - '7.4.2-debian9'
-      - '7.4-debian9'
+      - '7.5.0-debian9'
+      - '7.5-debian9'
       - '7-debian9'
-      - '7.4.2'
-      - '7.4'
+      - '7.5.0'
+      - '7.5'
       - '7'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '7.4.2'
-        sha512: '43c2e8846d5403b9bce6445cdbd2a5e94d60353487c83a8f0b2f242ddf52a3014e200722411e6ab3d942bd12d647545f78c12620c97198cc6b5e8e4891750704'
+        version: '7.5.0'
+        sha512: '42ff9f73badf9f4fdf8a99fe87ec742ac256742ae99eb0b7147e6fb30f9b34b11ec25579d5bab73a9765109db304735a524526d4d629de5d0e10f2aff9f4c930'
   - dir: '6/debian9/6.8'
     repo: kibana6
     templateSubDir: 6
