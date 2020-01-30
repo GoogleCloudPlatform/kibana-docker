@@ -20,18 +20,18 @@ versions:
     repo: kibana7
     templateSubDir: 7
     tags:
-      - '7.5.1-debian9'
+      - '7.5.2-debian9'
       - '7.5-debian9'
       - '7-debian9'
-      - '7.5.1'
+      - '7.5.2'
       - '7.5'
       - '7'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '7.5.1'
-        sha512: 'bf81d3827ee537e2d4105b76eb7d600f98967bb6969bbc9ce83fe7d0246e96077f0c44d16640c5c443c160b2a72d28b6e8b8493c69c1b3949e595a553295f06d'
+        version: '7.5.2'
+        sha512: 'cbab66b5dbede14566143ba2e4e51c9ae1f59355c1d0899a8f61e70e81415e3d284d205a98b7b7d27b829a89003902c3eb5ef4c0bf65278ceabfa34fc97ed8c4'
   - dir: '6/debian9/6.8'
     repo: kibana6
     templateSubDir: 6
