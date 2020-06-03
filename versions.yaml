@@ -16,38 +16,38 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
-  - dir: '7/debian9/7.6'
+  - dir: '7/debian9/7.7'
     repo: kibana7
     templateSubDir: 7
     tags:
-      - '7.6.2-debian9'
-      - '7.6-debian9'
+      - '7.7.1-debian9'
+      - '7.7-debian9'
       - '7-debian9'
-      - '7.6.2'
-      - '7.6'
+      - '7.7.1'
+      - '7.7'
       - '7'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '7.6.2'
-        sha512: '639119273e0184640cf25513dd29633939c4bdc173e6577d377d60503db68989980fe09829fad8ba0862695dd7f79fd7dbd0102c3c2f9eb5e762071579a3d424'
+        version: '7.7.1'
+        sha512: '7bf5deb3eed503ca988baba63fbb977f38fb9ff57089fa47fafef6bb33e0e70a9368a8ccf6c7a651c88311c56b08459af43566e76af3103c8a4c0da51bce5097'
   - dir: '6/debian9/6.8'
     repo: kibana6
     templateSubDir: 6
     tags:
-      - '6.8.8-debian9'
+      - '6.8.10-debian9'
       - '6.8-debian9'
       - '6-debian9'
-      - '6.8.8'
+      - '6.8.10'
       - '6.8'
       - '6'
       - 'latest'
     from: *from
     packages:
       kibana:
-        version: '6.8.8'
-        sha512: '64c839cf8c1bbddf776655f6674640bd01bbe97039b78f9fac0a95f425eea37825c5fa9a06b4e8bad4e8230db02424afa569a3adcd5d36164f3d6aada8b2f4e4'
+        version: '6.8.10'
+        sha512: 'ba260ed9efe7eebbd9ee3b8c67c6a417fd82e10f457967a4782292d13961a3954f9e4bbf7acc0f872f36464948057f3f322f45e3fc79a255728c8864f17506cd'
   - dir: '6/debian9/6.3'
     repo: kibana6
     templateSubDir: 6
