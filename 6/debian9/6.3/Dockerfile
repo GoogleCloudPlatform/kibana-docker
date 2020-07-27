@@ -1,4 +1,4 @@
-FROM gcr.io/google-appengine/debian9
+FROM marketplace.gcr.io/google/debian9
 ENV KIBANA_VERSION 6.3.2
 ENV KIBANA_SHA512 87236fa1a45a5c5e0ecdc033f864e9a1f74cb148e350b83c6c024b37eb71e3c16236fe52525898532f286f816cb6d03de23cba3d97e0cc0c4d622cdd18c7defb
 
