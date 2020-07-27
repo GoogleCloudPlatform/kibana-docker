@@ -2,7 +2,7 @@ FROM marketplace.gcr.io/google/debian9
 ENV KIBANA_VERSION 6.8.10
 ENV KIBANA_SHA512 ba260ed9efe7eebbd9ee3b8c67c6a417fd82e10f457967a4782292d13961a3954f9e4bbf7acc0f872f36464948057f3f322f45e3fc79a255728c8864f17506cd
 
-ENV C2D_RELEASE=${KIBANA_VERSION}
+ENV C2D_RELEASE 6.8.10
 
 ARG KIBANA_URL="https://artifacts.elastic.co/downloads/kibana/kibana-oss-$KIBANA_VERSION-linux-x86_64.tar.gz"
 
