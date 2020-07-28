@@ -1,10 +1,10 @@
-# Copyright 2019 Google LLC
+# Copyright 2020 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,52 +12,53 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_variables:
-  from: &from gcr.io/google-appengine/debian9
 
+cloudbuild:
+  enable_parallel: false
 versions:
-  - dir: '7/debian9/7.6'
-    repo: kibana7
-    templateSubDir: 7
-    tags:
-      - '7.6.2-debian9'
-      - '7.6-debian9'
-      - '7-debian9'
-      - '7.6.2'
-      - '7.6'
-      - '7'
-      - 'latest'
-    from: *from
-    packages:
-      kibana:
-        version: '7.6.2'
-        sha512: '639119273e0184640cf25513dd29633939c4bdc173e6577d377d60503db68989980fe09829fad8ba0862695dd7f79fd7dbd0102c3c2f9eb5e762071579a3d424'
-  - dir: '6/debian9/6.8'
-    repo: kibana6
-    templateSubDir: 6
-    tags:
-      - '6.8.8-debian9'
-      - '6.8-debian9'
-      - '6-debian9'
-      - '6.8.8'
-      - '6.8'
-      - '6'
-      - 'latest'
-    from: *from
-    packages:
-      kibana:
-        version: '6.8.8'
-        sha512: '64c839cf8c1bbddf776655f6674640bd01bbe97039b78f9fac0a95f425eea37825c5fa9a06b4e8bad4e8230db02424afa569a3adcd5d36164f3d6aada8b2f4e4'
-  - dir: '6/debian9/6.3'
-    repo: kibana6
-    templateSubDir: 6
-    tags:
-      - '6.3.2-debian9'
-      - '6.3-debian9'
-      - '6.3.2'
-      - '6.3'
-    from: *from
-    packages:
-      kibana:
-        version: '6.3.2'
-        sha512: '87236fa1a45a5c5e0ecdc033f864e9a1f74cb148e350b83c6c024b37eb71e3c16236fe52525898532f286f816cb6d03de23cba3d97e0cc0c4d622cdd18c7defb'
+- dir: 7/debian9/7.8
+  from: marketplace.gcr.io/google/debian9
+  packages:
+    kibana:
+      sha512: 637c291623fdd10cd57a2599afe221d5af1724773a02da08a6ce808a6336a64d8278f7711fdaa95c6e1557c675d417698ec40c92062c5623917b78494dfe3d63
+      version: 7.8.0
+  repo: kibana7
+  tags:
+  - 7.8.0-debian9
+  - 7.8-debian9
+  - 7-debian9
+  - 7.8.0
+  - '7.8'
+  - '7'
+  - latest
+  templateSubDir: '7'
+- dir: 6/debian9/6.8
+  from: marketplace.gcr.io/google/debian9
+  packages:
+    kibana:
+      sha512: ba260ed9efe7eebbd9ee3b8c67c6a417fd82e10f457967a4782292d13961a3954f9e4bbf7acc0f872f36464948057f3f322f45e3fc79a255728c8864f17506cd
+      version: 6.8.10
+  repo: kibana6
+  tags:
+  - 6.8.10-debian9
+  - 6.8-debian9
+  - 6-debian9
+  - 6.8.10
+  - '6.8'
+  - '6'
+  - latest
+  templateSubDir: '6'
+- dir: 6/debian9/6.3
+  from: marketplace.gcr.io/google/debian9
+  packages:
+    kibana:
+      sha512: 87236fa1a45a5c5e0ecdc033f864e9a1f74cb148e350b83c6c024b37eb71e3c16236fe52525898532f286f816cb6d03de23cba3d97e0cc0c4d622cdd18c7defb
+      version: 6.3.2
+  repo: kibana6
+  tags:
+  - 6.3.2-debian9
+  - 6.3-debian9
+  - 6.3.2
+  - '6.3'
+  templateSubDir: '6'
+
