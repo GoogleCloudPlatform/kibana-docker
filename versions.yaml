@@ -20,14 +20,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: 39d796324b744f0b34548f1d97e042c5aaa66004f052627cfe7cb5ac998ac45df510b76692c297443af1cdd36a75ffd172810969b788df0fa972feedd78c1719
-      version: 7.9.2
+      sha512: 11b9ecaf5e8866b1b4d8bdd2004f3bfe801c2f5ee9bad8c83cd1a368ba2cfe46b357aabf1b1a50f5aef7852b2fd885642384327b3fd53977ec3fc404cf0e6eb8
+      version: 7.9.3
   repo: kibana7
   tags:
-  - 7.9.2-debian9
+  - 7.9.3-debian9
   - 7.9-debian9
   - 7-debian9
-  - 7.9.2
+  - 7.9.3
   - '7.9'
   - '7'
   - latest
@@ -36,14 +36,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: b8fd1fd2617163069a4f6ebb5f04bfd04d6ef39e859476430e42b07ecd209f69c6535b5db731604f2cc1360f62214145be37817509d35d7e4eda22a7085b0541
-      version: 6.8.12
+      sha512: 58e3d52616ca306739642e7932ec2f6388231c966e6fd5ce3431fc39e46183745f90ae069d659ad6c59f5c1361220e012723ccccd7dc47f61f53bf6d14705cde
+      version: 6.8.13
   repo: kibana6
   tags:
-  - 6.8.12-debian9
+  - 6.8.13-debian9
   - 6.8-debian9
   - 6-debian9
-  - 6.8.12
+  - 6.8.13
   - '6.8'
   - '6'
   - latest
