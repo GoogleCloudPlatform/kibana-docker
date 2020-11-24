@@ -16,19 +16,19 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 7/debian9/7.9
+- dir: 7/debian9/7.10
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: 11b9ecaf5e8866b1b4d8bdd2004f3bfe801c2f5ee9bad8c83cd1a368ba2cfe46b357aabf1b1a50f5aef7852b2fd885642384327b3fd53977ec3fc404cf0e6eb8
-      version: 7.9.3
+      sha512: 477d3a79319a0f14f3c844d52e23d997c736ba5acc0184ed1c1c853b3795fa2890ba692efa23d882ab09275bc03708c9a1a63d80fd13f7844d1fc8a48c0f2f75
+      version: 7.10.0
   repo: kibana7
   tags:
-  - 7.9.3-debian9
-  - 7.9-debian9
+  - 7.10.0-debian9
+  - 7.10-debian9
   - 7-debian9
-  - 7.9.3
-  - '7.9'
+  - 7.10.0
+  - '7.10'
   - '7'
   - latest
   templateSubDir: '7'
