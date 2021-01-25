@@ -20,14 +20,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: 761b1ba8922dd3429191ab28e663e28a988c8d140fb879924805746a3ff1df19cf7ad77f3d824eebdb771cfc218670aea424e7804bf57450573871de2c757cc1
-      version: 7.10.1
+      sha512: 77ebb247d5326f3f9ab97d57ecc00c7f70deae0e1857d8b5d8f9a5d05d6713e27514cca342df666be79ab85a580e9dc5c7fa9676d67e95db64a0d69546d8d699
+      version: 7.10.2
   repo: kibana7
   tags:
-  - 7.10.1-debian9
+  - 7.10.2-debian9
   - 7.10-debian9
   - 7-debian9
-  - 7.10.1
+  - 7.10.2
   - '7.10'
   - '7'
   - latest
@@ -47,18 +47,5 @@ versions:
   - '6.8'
   - '6'
   - latest
-  templateSubDir: '6'
-- dir: 6/debian9/6.3
-  from: marketplace.gcr.io/google/debian9
-  packages:
-    kibana:
-      sha512: 87236fa1a45a5c5e0ecdc033f864e9a1f74cb148e350b83c6c024b37eb71e3c16236fe52525898532f286f816cb6d03de23cba3d97e0cc0c4d622cdd18c7defb
-      version: 6.3.2
-  repo: kibana6
-  tags:
-  - 6.3.2-debian9
-  - 6.3-debian9
-  - 6.3.2
-  - '6.3'
   templateSubDir: '6'
 
