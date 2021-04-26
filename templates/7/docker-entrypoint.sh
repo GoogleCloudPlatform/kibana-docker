@@ -61,7 +61,7 @@ kibana_vars=(
     elasticsearch.tribe.ssl.verify
     elasticsearch.tribe.url
     elasticsearch.tribe.username
-    elasticsearch.url
+    elasticsearch.hosts
     elasticsearch.username
     kibana.defaultAppId
     kibana.index
