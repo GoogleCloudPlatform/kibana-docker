@@ -26,7 +26,7 @@
 #       --elasticsearch.startupTimeout=60
 
 kibana_vars=(
-   console.enabled
+    console.enabled
     console.proxyConfig
     console.proxyFilter
     ops.cGroupOverrides.cpuPath
