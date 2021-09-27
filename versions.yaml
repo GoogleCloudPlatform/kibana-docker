@@ -36,14 +36,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: c440862a6d1927c20b841e484e8a0b5d39eb418043e13a74122772b3933d3f75144d09fb0792cc2119cd0d2092a74ee91024f39a6fc231136463fc715ed498ca
-      version: 6.8.18
+      sha512: 86c22f5d3ddffa8c650e6326b8632ee5ca9bfb3f2dac7df38f8dfce41c8f777eaa5eea43dfb03b1e10c3ecc597624f8c3b19a31dbc7abc514759973c8bf0a47c
+      version: 6.8.19
   repo: kibana6
   tags:
-  - 6.8.18-debian9
+  - 6.8.19-debian9
   - 6.8-debian9
   - 6-debian9
-  - 6.8.18
+  - 6.8.19
   - '6.8'
   - '6'
   - latest
