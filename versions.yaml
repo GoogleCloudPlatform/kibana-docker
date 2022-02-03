@@ -1,4 +1,4 @@
-# Copyright 2021 Google LLC
+# Copyright 2022 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,14 +36,14 @@ versions:
   from: marketplace.gcr.io/google/debian9
   packages:
     kibana:
-      sha512: 30a19e8ff87f590aefa607db3f55d53acc41077768e0239933c2cbaedd1abffa05c6df96b575f22b3b1151ef6f1a5ed860fc0e53f87ecaa1239c5564e7a7c4bf
-      version: 6.8.22
+      sha512: f6ffd8e8f957e08a6783b3decbab0f85654eb1386d7135e76c25799c76524957aa250f8bae43b220c0f14616071a63f5132ca73145d5a44ac8a52d106403a530
+      version: 6.8.23
   repo: kibana6
   tags:
-  - 6.8.22-debian9
+  - 6.8.23-debian9
   - 6.8-debian9
   - 6-debian9
-  - 6.8.22
+  - 6.8.23
   - '6.8'
   - '6'
   - latest
