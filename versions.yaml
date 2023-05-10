@@ -1,4 +1,4 @@
-# Copyright 2022 Google LLC
+# Copyright 2023 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,33 +16,33 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 7/debian9/7.10
-  from: marketplace.gcr.io/google/debian9
+- dir: 7/debian11/7.10
+  from: marketplace.gcr.io/google/c2d-debian11
   packages:
     kibana:
       sha512: 77ebb247d5326f3f9ab97d57ecc00c7f70deae0e1857d8b5d8f9a5d05d6713e27514cca342df666be79ab85a580e9dc5c7fa9676d67e95db64a0d69546d8d699
       version: 7.10.2
   repo: kibana7
   tags:
-  - 7.10.2-debian9
-  - 7.10-debian9
-  - 7-debian9
+  - 7.10.2-debian11
+  - 7.10-debian11
+  - 7-debian11
   - 7.10.2
   - '7.10'
   - '7'
   - latest
   templateSubDir: '7'
-- dir: 6/debian9/6.8
-  from: marketplace.gcr.io/google/debian9
+- dir: 6/debian11/6.8
+  from: marketplace.gcr.io/google/c2d-debian11
   packages:
     kibana:
       sha512: f6ffd8e8f957e08a6783b3decbab0f85654eb1386d7135e76c25799c76524957aa250f8bae43b220c0f14616071a63f5132ca73145d5a44ac8a52d106403a530
       version: 6.8.23
   repo: kibana6
   tags:
-  - 6.8.23-debian9
-  - 6.8-debian9
-  - 6-debian9
+  - 6.8.23-debian11
+  - 6.8-debian11
+  - 6-debian11
   - 6.8.23
   - '6.8'
   - '6'
